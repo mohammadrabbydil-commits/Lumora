@@ -1,0 +1,19 @@
+# Create .gitignore at project root
+@"
+# Python
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
+backend/emotion_system.db
+backend/test.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# System
+.DS_Store
+*.png
+!correlation_matrix.png
+"@ | Out-File -FilePath .gitignore -Encoding utf8
